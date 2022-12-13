@@ -6,10 +6,21 @@ import chai from "chai"
 import toNumber from "../src/toNumber.js";
 const expect = chai.expect
 
-
-
 describe("toNumber", () => {
- it("testing this", () =>{
-     expect(toNumber(9)).to.equal(9)
- });
+    it("Should return number", ()=>{
+           expect(toNumber(3,2)).to.equal(3);
+    });
+    it("Should return number", ()=>{
+        const result = toNumber(Number.MAX_VALUE);
+        expect(result).to.equal(Number.MIN_VALUE);
+    });
+    it("Should return number", ()=>{
+        const result = toNumber(Infinity);
+        expect(result).to.equal(Infinity);
+    });
+    it("Should return number", ()=>{
+        const result = toNumber('3,2');
+        expect(result).to.equal('3.2');
+    });
+    
 })
