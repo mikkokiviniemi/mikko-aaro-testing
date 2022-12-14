@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test-cov":"nyc npm run mocha"
+    "test-cov": "nyc npm run mocha"
   },
   "author": "",
   "license": "MIT",
@@ -18,5 +18,8 @@
   },
   "bin": {
     "coveralls": "bin/coveralls.js"
+  },
+  "dependencies": {
+    "nyc": "^15.1.0"
   }
 }
