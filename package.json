@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test-coverage":"nyc --reporter=text mocha",
+    "test-coverage":"nyc --reporter=text test",
     "test":"mocha"
   },
   "author": "",
