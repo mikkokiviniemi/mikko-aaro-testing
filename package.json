@@ -15,22 +15,27 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.7",
-    "coveralls": "^3.1.1",
-    "mocha": "^10.2.0",
-    "mocha-lcov-reporter": "^1.3.0"
-  },
-  "bin": {
-    "coveralls": "bin/coveralls.js"
-  },
-  "dependencies": {
     "chx": "^0.1.0",
+    "coveralls": "^3.1.1",
     "glob-parent": "^6.0.2",
     "lint": "^0.8.19",
+    "mocha": "^10.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^15.1.0",
     "should": "^13.2.3",
     "sinon": "^15.0.0",
     "spec": "^1.0.1",
     "trim-newlines": "^4.0.2",
     "xo": "^0.53.1"
+  },
+  "bin": {
+    "coveralls": "bin/coveralls.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lcov-parse": "^1.0.0",
+    "log-driver": "^1.2.7",
+    "minimist": "^1.2.7",
+    "request": "^2.88.2"
   }
 }
