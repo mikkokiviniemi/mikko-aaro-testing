@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test-coverage":"nyc --reporter=text test",
-    "test":"mocha"
+    "test": "nyc mocha"
   },
   "author": "",
   "license": "MIT",
