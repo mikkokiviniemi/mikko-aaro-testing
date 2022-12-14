@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "xo",
     "mocha": "_mocha -b -R spec",
     "test-cov": "nyc npm run mocha",
     "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
@@ -22,6 +23,14 @@
     "coveralls": "bin/coveralls.js"
   },
   "dependencies": {
-    "nyc": "^15.1.0"
+    "chx": "^0.1.0",
+    "glob-parent": "^6.0.2",
+    "lint": "^0.8.19",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3",
+    "sinon": "^15.0.0",
+    "spec": "^1.0.1",
+    "trim-newlines": "^4.0.2",
+    "xo": "^0.53.1"
   }
 }
