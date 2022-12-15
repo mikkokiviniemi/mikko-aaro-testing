@@ -5,7 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc mocha"
+    "lint": "xo",
+    "mocha": "_mocha -b -R spec",
+    "test-cov": "nyc npm run mocha",
+    "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
+    "test": "npm run lint && npm run mocha"
   },
   "author": "",
   "license": "MIT",
