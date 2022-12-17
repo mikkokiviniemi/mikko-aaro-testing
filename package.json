@@ -4,8 +4,21 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/get.js",
+      "src/isBoolean.js",
+      "src/isDate.js",
+      "src/isEmpty.js",
+      "src/toIntegers.js",
+      "src/toNumber.js",
+      "src/toString.js",
+      "src/words.js"
+    ]
+  },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text ./node_modules/.bin/mocha",
+    "test": "nyc --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",

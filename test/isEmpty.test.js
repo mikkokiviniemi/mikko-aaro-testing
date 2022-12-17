@@ -10,6 +10,10 @@ describe("isEmpty", ()=>{
            const result = isEmpty(null);
            expect(result).to.equal(true);
     });
+    it('Thingy', function(done) {
+        expect(isEmpty(null)).to.equal(true);
+        done();
+        });
     it("Should return true", ()=>{
         const result = isEmpty(true);
         expect(result).to.equal(true);
