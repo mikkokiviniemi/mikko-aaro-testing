@@ -8,15 +8,15 @@ describe("toString()", ()=>{
            const result = toString(null);
            expect(result).to.equal('');
     });
-    it("Should return string", ()=>{
+    it("Testing integer", ()=>{
         const result = toString(-0);
         expect(result).to.equal('-0');
     });
-    it("Should return string", ()=>{
+    it("Testing array", ()=>{
         const result = toString([1, 2, 3]);
         expect(result).to.equal('1,2,3');
     });
-    it("Should return string", ()=>{
+    it("Testing string", ()=>{
         const result = toString("moikka");
         expect(result).to.equal("moikka");
     });

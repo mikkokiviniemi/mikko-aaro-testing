@@ -6,31 +6,27 @@ const expect = chai.expect;
 
 
 describe("isEmpty", ()=>{
-    it("Should return true", ()=>{
+    it("Testing with null", ()=>{
            const result = isEmpty(null);
            expect(result).to.equal(true);
     });
-    it('Thingy', function(done) {
-        expect(isEmpty(null)).to.equal(true);
-        done();
-        });
-    it("Should return true", ()=>{
+    it("Testing with true", ()=>{
         const result = isEmpty(true);
         expect(result).to.equal(true);
     });
-    it("Should return true", ()=>{
+    it("Testing with 1", ()=>{
         const result = isEmpty(1);
         expect(result).to.equal(true);
     });
-    it("Should return false", ()=>{
+    it("Testing with array", ()=>{
         const result = isEmpty([1, 2, 3]);
         expect(result).to.equal(false);
     });
-    it("Should return false", ()=>{
+    it("Testing with string", ()=>{
         const result = isEmpty('abc');
         expect(result).to.equal(false);
     });
-    it("Should return false", ()=>{
+    it("Testing with { 'a': 1 }", ()=>{
         const result = isEmpty({ 'a': 1 });
         expect(result).to.equal(false);
     });

@@ -4,16 +4,20 @@ const expect = chai.expect
 
 
 describe("isBoolean", ()=>{
-    it("Should return true", ()=>{
+    it("Testing with false", ()=>{
            const result = isBoolean(false);
            expect(result).to.equal(true);
     });
-    it("Should return false", ()=>{
+    it("Testing with null", ()=>{
         const result = isBoolean(null);
         expect(result).to.equal(false);
     });
-    it("Should return false", ()=>{
+    it("Testing with string", ()=>{
         const result = isBoolean('Hello');
+        expect(result).to.equal(false);
+    });
+    it("Testing with integer", ()=>{
+        const result = isBoolean(5);
         expect(result).to.equal(false);
     });
     

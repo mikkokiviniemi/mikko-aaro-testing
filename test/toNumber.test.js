@@ -7,18 +7,18 @@ import toNumber from "../src/toNumber.js";
 const expect = chai.expect
 
 describe("toNumber", () => {
-    it("Should return number", ()=>{
+    it("Testing with float 3.2", ()=>{
            expect(toNumber(3.2)).to.equal(3.2);
     });
-    it("Should return number", ()=>{
+    it("Testing with Number.MIN_VALUE", ()=>{
         const result = toNumber(Number.MIN_VALUE);
         expect(result).to.equal(5e-324);
     });
-    it("Should return number", ()=>{
+    it("Testing with Infinity", ()=>{
         const result = toNumber(Infinity);
         expect(result).to.equal(Infinity);
     });
-    it("Should return number", ()=>{
+    it("Testing with string 3.2", ()=>{
         const result = toNumber('3.2');
         expect(result).to.equal(3.2);
     });
